@@ -1,10 +1,5 @@
-A lightweight wysiwyg editor for Django
+A lightweight wysiwyg editor for Django 4.0+
 =======================================
-
-Screenshot
-----------
-
-.. image:: https://raw.githubusercontent.com/douglasmiranda/django-wysiwyg-redactor/master/screenshots/redactor.jpg
 
 What's that
 -----------------
@@ -33,13 +28,13 @@ Getting started
         # ...
     )
 
-- Add `url(r'^redactor/', include('redactor.urls'))`, to urls.py
+- Add `path('redactor/', include('redactor.urls'))`, to urls.py
 
 .. code-block:: python
 
     urlpatterns = [
         # ...
-        url(r'^redactor/', include('redactor.urls')),
+        path("redactor/", include("redactor.urls")),
         # ...
     ]
 
